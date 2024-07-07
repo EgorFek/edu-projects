@@ -1,0 +1,408 @@
+:root {
+    --link: #0077C0;
+    --orange: #FFB800;
+    --title: #009EFF;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: 50ms ease;
+}
+
+body {
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--title);
+}
+
+a {
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009EFF;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 60px;
+    gap: 20px;
+}
+
+.nav-up {
+    color: var(--link);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 0px 20px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 30px;
+    text-align: center;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--orange);
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: var(--orange);
+    padding: 4px 6px;
+    border-radius: 3px;
+    color: #000;
+}
+
+.btn-link:hover {
+    color: #2f2f2f;
+}
+
+.nav-down {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+}
+
+.burger {
+    position: relative;
+    width: 35px;
+    height: 35px;
+}
+
+.burger-line {
+    width: 100%;
+    height: 7px;
+    background-color: var(--link);
+    position: absolute;
+    top: 50%;
+}
+
+.burger-line:nth-of-type(1) {
+    top: calc(50% - 12px);
+}
+
+
+.burger-line:nth-of-type(3) {
+    top: calc(50% + 12px);
+}
+
+.hidden {
+    display: none;
+}
+
+.slider-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.slider-btns {
+    position: absolute;
+    width: 100%;
+    height: 40vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.slide {
+    height: 45vw;
+}
+
+.slider-btns {
+    height: 45vw;
+}
+
+.prev,
+.next {
+    color: var(--orange);
+    font-size: 40px;
+}
+
+.teacher-info {
+    text-align: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacher-info h1 {
+    font-size: 36px;
+}
+
+.teacher-info p {
+    font-size: 20px;
+    width: 50%;
+}
+
+.teacher-info h1::after,
+.teacher-info p::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 2px;
+    background-color: var(--orange);
+    margin: 40px auto;
+}
+
+.useful {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    width: 70%;
+    padding: 20px;
+    margin: 40px auto;
+}
+
+.useful h2 {
+    font-size: 28px;
+}
+
+.useful h3 {
+    font-size: 22px;
+}
+
+.useful h3 {
+    margin-bottom: 15px;
+}
+
+.useful p {
+    font-size: 18px;
+}
+
+footer {
+    background-color: var(--orange);
+    height: 15vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about {
+    padding: 40px;
+    min-height: 65vh;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 40px;
+}
+
+.to-the-lesson {
+    min-height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.to-the-lesson h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.to-the-lesson .btn-link {
+    font-size: 24px;
+}
+
+.page-form {
+    width: 40%;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .25);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.input-text {
+    display: block;
+    background-color: #e0e0e0;
+    color: rgba(0, 0, 0, .50);
+    border: none;
+    border-radius: 3px;
+    width: 60%;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 16px;
+}
+
+.btns-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.btn-form {
+    min-width: 80px;
+    height: 30px;
+    background-color: var(--orange);
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.error {
+    background-color: red;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+@media screen and (max-width: 1200px) {
+    nav {
+        padding: 30px 20px;
+    }
+
+    .nav-up {
+        padding: 0;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-up {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-container {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .burger {
+        align-self: flex-end;
+    }
+
+    .nav-links {
+        width: 100%;
+        flex-direction: column;
+        gap: 16px;
+        flex-direction: flex-start;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+
+    nav .btn-link {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+
+    .teacher-info p {
+        width: 85%;
+    }
+
+    .useful {
+        width: 90%;
+        margin: 100px auto;
+        text-align: center;
+    }
+
+    .about {
+        width: 90%;
+    }
+
+    .to-the-lesson {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+    }
+
+    .to-the-lesson h2 {
+        font-size: 28px;
+    }
+
+    .to-the-lesson .btn-link {
+        font-size: 20px;
+    }
+
+    .page-form {
+        width: 80%;
+        gap: 40px;
+        padding: 50px 0;
+    }
+
+    .input-text {
+        height: 50px;
+    }
+
+    .btns-form {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .btn-form {
+        min-width: 30%;
+        height: 50px;
+    }
+}
